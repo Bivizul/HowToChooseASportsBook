@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_light">#FF9800</color>
+    <color name="primary_variant_light">#BCFF9800</color>
+    <color name="on_primary_light">#FFFFFFFF</color>
+    <color name="secondary_light">#4CAF50</color>
+    <color name="secondary_variant_light">#BC4CAF50</color>
+    <color name="on_secondary_light">#FFFFFFFF</color>
+
+    <color name="primary_night">#6A3F00</color>
+    <color name="primary_variant_night">#BC6A3F00</color>
+    <color name="on_primary_night">#FBFBFB</color>
+    <color name="secondary_night">#29602B</color>
+    <color name="secondary_variant_night">#BC29602B</color>
+    <color name="on_secondary_night">#FBFBFB</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="tr_black">#52000000</color>
+</resources>
