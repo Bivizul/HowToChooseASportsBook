@@ -31,31 +31,11 @@
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/tab_layout_height_max"
-        app:tabMode="auto"
         android:background="?attr/colorSecondaryVariant"
         app:tabIndicatorHeight="4dp"
+        app:tabMode="auto"
         app:tabSelectedTextColor="?attr/colorPrimary"
         app:tabTextColor="?attr/colorOnSecondary">
-
-<!--        <com.google.android.material.tabs.TabItem-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Monday" />-->
-
-<!--        <com.google.android.material.tabs.TabItem-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Tuesday" />-->
-
-<!--        <com.google.android.material.tabs.TabItem-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Wednesday" />-->
-
-<!--        <com.google.android.material.tabs.TabItem-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Thursday" />-->
 
     </com.google.android.material.tabs.TabLayout>
 

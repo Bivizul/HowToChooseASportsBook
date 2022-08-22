@@ -5,7 +5,6 @@ import androidx.viewpager2.widget.ViewPager2
 import com.bivizul.howtochooseasportsbook.data.Constant.MIN_ALPHA
 import com.bivizul.howtochooseasportsbook.data.Constant.MIN_SCALE
 
-
 class ZoomOutPageTransformer : ViewPager2.PageTransformer {
 
     override fun transformPage(view: View, position: Float) {

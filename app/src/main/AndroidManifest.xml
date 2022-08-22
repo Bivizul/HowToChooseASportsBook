@@ -18,17 +18,36 @@
         tools:replace="android:fullBackupContent"
         tools:targetApi="31">
         <activity
-            android:name=".ui.ScrollingActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_scrolling"
-            android:windowSoftInputMode="adjustResize"
+            android:noHistory="true"
             android:theme="@style/Theme.HowToChooseASportsBook.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.WobataActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:noHistory="true"
+            android:theme="@style/Theme.HowToChooseASportsBook.NoActionBar.LightStatus"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.ScrollingActivity"
+            android:exported="true"
+            android:label="@string/title_activity_scrolling"
+            android:noHistory="true"
+            android:theme="@style/Theme.HowToChooseASportsBook.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

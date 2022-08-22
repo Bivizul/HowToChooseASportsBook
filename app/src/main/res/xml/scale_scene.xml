@@ -6,28 +6,24 @@
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@+id/start"
         motion:duration="1000"
-        motion:motionInterpolator="linear" >
+        motion:motionInterpolator="linear">
 
         <OnSwipe
+            motion:dragDirection="dragUp"
             motion:touchAnchorId="@+id/container"
-            motion:touchAnchorSide="top"
-            motion:dragDirection="dragUp" />
+            motion:touchAnchorSide="top" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
 
         <Constraint
             android:id="@+id/container"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="32dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent">
-<!--            <CustomAttribute-->
-<!--                motion:attributeName="BackgroundColor"-->
-<!--                motion:customColorValue="@color/purple_200" />-->
-        </Constraint>
+            motion:layout_constraintEnd_toEndOf="parent" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
@@ -36,12 +32,8 @@
             android:id="@id/container"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintBottom_toBottomOf="parent">
-<!--            <CustomAttribute-->
-<!--                motion:attributeName="BackgroundColor"-->
-<!--                motion:customColorValue="@color/teal_700" />-->
-        </Constraint>
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
 
     </ConstraintSet>
 

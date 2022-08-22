@@ -5,4 +5,5 @@
     <dimen name="text_margin">16dp</dimen>
     <dimen name="tab_layout_height_max">50dp</dimen>
     <dimen name="tab_layout_height_min">30dp</dimen>
+    <dimen name="app_name">32sp</dimen>
 </resources>

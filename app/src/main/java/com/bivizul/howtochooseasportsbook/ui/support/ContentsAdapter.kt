@@ -8,9 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bivizul.howtochooseasportsbook.data.model.Step
 import com.bivizul.howtochooseasportsbook.databinding.ItemContentsBinding
 
-class ContentsAdapter : ListAdapter<Step, ContentsAdapter.ContentsViewHolder>(ContentsDiffCallback) {
+class ContentsAdapter :
+    ListAdapter<Step, ContentsAdapter.ContentsViewHolder>(ContentsDiffCallback) {
 
-    class ContentsViewHolder(val binding: ItemContentsBinding) : RecyclerView.ViewHolder(binding.root)
+    class ContentsViewHolder(val binding: ItemContentsBinding) :
+        RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContentsViewHolder {
 
@@ -33,5 +35,4 @@ class ContentsAdapter : ListAdapter<Step, ContentsAdapter.ContentsViewHolder>(Co
             }
         }
     }
-
 }

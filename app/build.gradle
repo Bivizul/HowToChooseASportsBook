@@ -55,6 +55,9 @@ dependencies {
     // Binding delegate
     implementation "com.github.kirich1409:viewbindingpropertydelegate-noreflection:$bindingVersion"
 
+    // AdvancedWebView
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.2.1'
+
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"

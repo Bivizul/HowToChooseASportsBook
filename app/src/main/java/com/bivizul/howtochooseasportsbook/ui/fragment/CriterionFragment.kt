@@ -16,7 +16,7 @@ import com.bivizul.howtochooseasportsbook.databinding.FragmentCriterionBinding
 import com.bivizul.howtochooseasportsbook.ui.support.ContentsAdapter
 import com.bivizul.howtochooseasportsbook.ui.support.HowToChooseASBViewModel
 import com.bivizul.howtochooseasportsbook.ui.support.HowToChooseASBViewModelFactory
-import com.bivizul.howtochooseasportsbook.util.getDER
+import com.bivizul.howtochooseasportsbook.util.getDialog
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -44,14 +44,13 @@ class CriterionFragment : Fragment(R.layout.fragment_criterion) {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.howToChooseASB.collect { howToChooseASB ->
                     if (howToChooseASB == null) {
-                        getDER(requireContext(), requireActivity())
+                        getDialog(requireContext(), requireActivity())
                     }
                     howToChooseASB?.let {
                         binding.titleStep.text = it.howToChooseASB.tips[num].titleTips
                         binding.subtitleStep.text = it.howToChooseASB.tips[num].subtitleTips
                         val list = it.howToChooseASB.tips[num].step
                         contentAdapter.submitList(list)
-
                     }
                 }
             }

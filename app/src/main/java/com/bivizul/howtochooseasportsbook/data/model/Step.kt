@@ -7,5 +7,5 @@ data class Step(
     val id: Int,
     val subtitle: String,
     val title: String,
-    var openClose:Boolean = true,
+    var openClose: Boolean = true,
 )

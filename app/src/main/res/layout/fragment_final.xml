@@ -3,31 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="?attr/colorPrimaryVariant"
     android:layout_height="match_parent"
-    android:padding="4dp"
+    android:background="?attr/colorPrimaryVariant"
     android:orientation="vertical"
+    android:padding="4dp"
     tools:context=".ui.fragment.FinalFragment">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/titleStep"
         android:layout_width="match_parent"
-        android:textAlignment="center"
-        android:padding="4dp"
-        android:textSize="20sp"
-        android:textColor="?attr/colorOnPrimary"
-        android:textStyle="bold"
         android:layout_height="wrap_content"
-        tools:text="Text TITLE"/>
+        android:padding="4dp"
+        android:textAlignment="center"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Text TITLE" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/subtitleStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:padding="4dp"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="16sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="Text SUBTITLE"/>
+        tools:text="Text SUBTITLE" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"

@@ -6,5 +6,5 @@ import com.google.gson.annotations.SerializedName
 @Keep
 data class HowToChooseASB(
     @SerializedName("howToChooseASportsBook")
-    val howToChooseASB: Contents
+    val howToChooseASB: Contents,
 )

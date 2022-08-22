@@ -13,10 +13,9 @@ import com.bivizul.howtochooseasportsbook.R
 import com.bivizul.howtochooseasportsbook.appComponent
 import com.bivizul.howtochooseasportsbook.data.Constant
 import com.bivizul.howtochooseasportsbook.databinding.FragmentFinalBinding
-import com.bivizul.howtochooseasportsbook.ui.support.ContentsAdapter
 import com.bivizul.howtochooseasportsbook.ui.support.HowToChooseASBViewModel
 import com.bivizul.howtochooseasportsbook.ui.support.HowToChooseASBViewModelFactory
-import com.bivizul.howtochooseasportsbook.util.getDER
+import com.bivizul.howtochooseasportsbook.util.getDialog
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -27,7 +26,6 @@ class FinalFragment : Fragment(R.layout.fragment_final) {
 
     private val binding by viewBinding(FragmentFinalBinding::bind)
     private val viewModel: HowToChooseASBViewModel by viewModels { factory.create() }
-//    private val contentAdapter by lazy { ContentsAdapter() }
     private val num = Constant.FOUR
 
     override fun onAttach(context: Context) {
@@ -38,13 +36,11 @@ class FinalFragment : Fragment(R.layout.fragment_final) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        binding.recyclerView.adapter = contentAdapter
-
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.howToChooseASB.collect { howToChooseASB ->
                     if (howToChooseASB == null) {
-                        getDER(requireContext(), requireActivity())
+                        getDialog(requireContext(), requireActivity())
                     }
                     howToChooseASB?.let {
                         binding.titleStep.text = it.howToChooseASB.tips[num].titleTips

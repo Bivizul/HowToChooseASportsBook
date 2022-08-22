@@ -16,7 +16,7 @@ import com.bivizul.howtochooseasportsbook.databinding.FragmentPitfallsBinding
 import com.bivizul.howtochooseasportsbook.ui.support.ContentsAdapter
 import com.bivizul.howtochooseasportsbook.ui.support.HowToChooseASBViewModel
 import com.bivizul.howtochooseasportsbook.ui.support.HowToChooseASBViewModelFactory
-import com.bivizul.howtochooseasportsbook.util.getDER
+import com.bivizul.howtochooseasportsbook.util.getDialog
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -45,7 +45,7 @@ class PitfallsFragment : Fragment(R.layout.fragment_pitfalls) {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.howToChooseASB.collect { howToChooseASB ->
                     if (howToChooseASB == null) {
-                        getDER(requireContext(), requireActivity())
+                        getDialog(requireContext(), requireActivity())
                     }
                     howToChooseASB?.let {
                         binding.titleStep.text = it.howToChooseASB.tips[num].titleTips

@@ -15,7 +15,7 @@ class HTCASBApp : Application() {
         super.onCreate()
         appComponent = DaggerAppComponent.create()
 
-        //TODO(OneSignal)
+        // TODO(OneSignal)
 //        // Enable verbose OneSignal logging to debug issues if needed.
 //        OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE)
 //

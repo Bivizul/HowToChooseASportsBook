@@ -23,6 +23,11 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="Theme.HowToChooseASportsBook.NoActionBar.LightStatus">
+
+        <item name = "android:windowLightStatusBar">true</item>
+    </style>
+
     <style name="Theme.HowToChooseASportsBook.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.HowToChooseASportsBook.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

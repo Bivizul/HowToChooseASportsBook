@@ -5,5 +5,5 @@ import androidx.annotation.Keep
 @Keep
 data class Contents(
     val intro: String,
-    val tips: List<Tip>
+    val tips: List<Tip>,
 )

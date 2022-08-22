@@ -16,17 +16,17 @@ class HowToChooseASBViewModel @Inject constructor(howToChooseASBRepository: HowT
 }
 
 class HowToChooseASBViewModelFactory @AssistedInject constructor(
-    private val howToChooseASBRepository: HowToChooseASBRepository
-    ) : ViewModelProvider.Factory {
+    private val howToChooseASBRepository: HowToChooseASBRepository,
+) : ViewModelProvider.Factory {
 
-        @Suppress(UNCHEKED_CAST)
-        override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            return HowToChooseASBViewModel(howToChooseASBRepository) as T
-        }
+    @Suppress(UNCHEKED_CAST)
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return HowToChooseASBViewModel(howToChooseASBRepository) as T
+    }
 
-        @AssistedFactory
-        interface Factory{
-            fun create():HowToChooseASBViewModelFactory
-        }
+    @AssistedFactory
+    interface Factory {
+        fun create(): HowToChooseASBViewModelFactory
+    }
 
 }
